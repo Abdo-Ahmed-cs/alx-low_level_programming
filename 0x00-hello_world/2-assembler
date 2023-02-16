@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -S $CFILE -O $(echo $CFILE | cut -d '.' -f 1).s
