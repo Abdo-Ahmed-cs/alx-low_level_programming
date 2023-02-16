@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <unstdio.h>
 /**
  * main - entry point
  *
@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	fprintf(stderr, "%s", "and that piece of art is useful\"
-		- Dora Korpar, 2015-10-19");
+	fput("and that piece of art is useful\"
+- Dora Korpar, 2015-10-19", stdout);
 	return (0);
 }
