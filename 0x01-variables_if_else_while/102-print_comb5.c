@@ -23,7 +23,7 @@ int main(void)
 			{
 				for (l = 1; l < 10; l++)
 				{
-					if (k == 0 && i == 0)
+					if (k == 0 && l == 0)
 					{
 						continue;
 					}
