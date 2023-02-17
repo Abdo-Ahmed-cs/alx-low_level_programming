@@ -23,6 +23,10 @@ int main(void)
 			{
 				for (l = 1; l < 10; l++)
 				{
+					if (k == 0 && i == 0)
+					{
+						continue;
+					}
 					putchar('0' + i);
 					putchar('0' + j);
 					putchar(' ');
