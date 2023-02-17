@@ -21,7 +21,7 @@ int main(void)
 		{
 			for (k = 0; k < 10; k++)
 			{
-				for (l = 1; l < 10; l++)
+				for (l = 0; l < 10; l++)
 				{
 					if (k == 0 && l == 0)
 					{
