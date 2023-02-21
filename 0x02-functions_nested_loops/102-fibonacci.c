@@ -10,12 +10,12 @@
 
 int main(void)
 {
-	long long int fib1, fib2, fib3, i;
+	long int fib1, fib2, fib3, i;
 
 	fib1 = 1;
 	fib2 = 2;
 
-	printf("%lli, %lli, ", fib1, fib2);
+	printf("%li, %li, ", fib1, fib2);
 
 	for (i = 0; i < 48; i++)
 	{
@@ -24,10 +24,10 @@ int main(void)
 		fib2 = fib3;
 		if (i != 47)
 		{
-			printf("%lli, ", fib3);
+			printf("%li, ", fib3);
 		} else
 		{
-			printf("%lli\n", fib3);
+			printf("%li\n", fib3);
 		}
 	}
 
