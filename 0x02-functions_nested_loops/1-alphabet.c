@@ -12,7 +12,7 @@ void print_alphabet(void)
 
 	for (i = 0; i < 26; i++)
 	{
-		_putcahr(ch_l);
+		_putchar(ch_l);
 		ch_l++;
 	}
 	_putchar('\n');
