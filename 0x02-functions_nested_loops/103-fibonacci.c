@@ -12,7 +12,7 @@ int main(void)
 {
 	long fib1 = 1;
 	long fib2 = 2;
-	long fib3;
+	long fib3 = 3;
 	long sum = 2;
 
 	while (fib3 < 4000000)
