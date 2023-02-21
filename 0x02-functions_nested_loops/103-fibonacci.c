@@ -23,10 +23,10 @@ int main(void)
 
 		if (fib3 % 2 == 0)
 		{
-			sum += fib3
+			sum += fib3;
 		}
 	}
 
-	printf("%li", sum);
+	printf("%li\n", sum);
 	return (0);
 }
