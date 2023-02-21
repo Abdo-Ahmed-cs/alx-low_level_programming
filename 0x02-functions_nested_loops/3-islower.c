@@ -2,7 +2,11 @@
 #include <ctype.h>
 
 /**
- *int _islower - checks if the letter is lowercse or upper case
+ * _islower - checks if the letter is lowercse or upper case
+ *
+ * @c: character letter
+ *
+ * Return: return 1 if is lower else return 0
  */
 
 int _islower(int c)
