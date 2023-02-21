@@ -4,7 +4,6 @@
 /**
  * print_alphabet - prints alphabet
  */
-
 void print_alphabet(void)
 {
 	char ch_l = 'a';
@@ -16,18 +15,4 @@ void print_alphabet(void)
 		ch_l++;
 	}
 	_putchar('\n');
-}
-
-/**
- * main - entry point
- *
- * Description: 'this program use _putchar to print the alphapet'
- *
- * Return: return 0 and exit the program
- */
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
 }
