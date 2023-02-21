@@ -20,6 +20,6 @@ int print_sign(int n)
 		_putchar('0');
 		return (0);
 	}
-	putchar('-');
+	_putchar('-');
 	return (-1);
 }
