@@ -22,7 +22,7 @@ void puts_half(char *str)
 	{
 		if (index > (len - 1) / 2)
 		{
-			putchar(a[index]);
+			putchar(str[index]);
 		}
 		index++;
 	}
