@@ -22,9 +22,9 @@ void puts_half(char *str)
 	{
 		if (index > (len - 1) / 2)
 		{
-			putchar(str[index]);
+			_putchar(str[index]);
 		}
 		index++;
 	}
-	putchar('\n');
+	_putchar('\n');
 }
