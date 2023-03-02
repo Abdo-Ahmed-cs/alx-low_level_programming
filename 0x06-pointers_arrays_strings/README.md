@@ -1,1 +1,1 @@
-this directory is for more tasks about pointers
+0x06. C - More pointers, arrays and strings
