@@ -19,6 +19,6 @@ char *string_toupper(char *s)
 		}
 		i++;
 	}
-	return (n);
+	return (s);
 
 }
