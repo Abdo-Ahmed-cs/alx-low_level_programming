@@ -14,11 +14,13 @@ int evaluate(int n, int a)
 	{
 		return (-1);
 	}
-	if (a * a == n)
+	if (a * a != n)
+	{
+		evaluate(n, a + 1);
+	} else
 	{
 		return (a);
 	}
-	evaluate(n, a + 1);
 }
 
 /**
