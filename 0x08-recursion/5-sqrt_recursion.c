@@ -18,7 +18,7 @@ int evaluate(int n, int a)
 	{
 		return (a);
 	}
-	evalueate(n, a + 1);
+	evaluate(n, a + 1);
 }
 
 /**
