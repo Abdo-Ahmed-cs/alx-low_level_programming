@@ -15,7 +15,6 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
 	int multi;
 
 	if (argc == 3)
