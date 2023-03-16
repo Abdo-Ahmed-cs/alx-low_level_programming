@@ -9,8 +9,7 @@
  *
  * Return: pointer of s1 + n bytes of s2
  */
-
-char *string_nconcat(char *s1, char *s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n);
 {
 	int i, j, k;
 	char *str;
@@ -32,6 +31,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = j;
 	}
 	str = malloc(sizeof(char) * (i + j + 1));
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	for (k = 0; k < i; k++)
 	{
 		str[k] = s1[k];
