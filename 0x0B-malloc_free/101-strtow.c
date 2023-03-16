@@ -18,7 +18,7 @@ char **strtow(char *str)
 	char **s;
 
 
-	if (str == NULL || *str == "")
+	if (str == NULL || str == "")
 	{
 		return (NULL);
 	}
@@ -34,12 +34,12 @@ char **strtow(char *str)
 			k++;
 		}
 	}
-	str = (char **) malloc(sizeof(char *) words);
+	str = (char **) malloc(sizeof(char *) * words);
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < words)
+	for (i = 0; i < words; i++)
 	{
 		for (j = 0; j < wlength; j++)
 		{
