@@ -3,21 +3,27 @@
 
 /**
  * *string_nconcat - concat two strings
- * @s1: string pointer
- * @s2: string pointer
- * @n: number of bytes
+ * @s1: string one
+ * @s2: string two
+ * @n: bytes of string 2
  *
- * Return: pointer of s1 + n bytes of s2
+ * Return: pointer of two strings ncancated
  */
-char *string_nconcat(char *s1, char *s2, unsigned int n);
+
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i, j, k;
+	unsigned int i, j, k;
 	char *str;
 
 	if (s1 == NULL)
+	{
 		s1 == "";
+	}
 	if (s2 == NULL)
+	{
 		s2 == "";
+	}
+
 	while (s1[i] != '\0')
 	{
 		i++;
@@ -30,20 +36,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
 	{
 		n = j;
 	}
-	str = malloc(sizeof(char) * (i + j + 1));
-	if (str == NULL)
-	{
-		return (NULL);
-	}
+	str = malloc(sizeof(char) * (i + n + 1));
 	for (k = 0; k < i; k++)
 	{
 		str[k] = s1[k];
 	}
-	for (; k < n + i; k++)
+	for (; k < i + n; k++)
 	{
 		str[k] = s2[k - i];
 	}
 	str[k] = '\0';
 	return (str);
-
+	
 }
