@@ -4,7 +4,7 @@
 /**
  * main - entry point
  *
- * Description: mul two integers in base 10
+ * Description: 'mul two integers in base 10'
  *
  * @argc: number of arguments
  * @argv: array of arguments
@@ -12,7 +12,7 @@
  * Return: status 98 on failure
  */
 
-int main(int argc; char **argv)
+int main(int argc, char *argv[])
 {
 	long num1, num2;
 
