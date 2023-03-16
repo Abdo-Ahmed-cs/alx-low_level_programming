@@ -14,16 +14,16 @@
 
 int main(int argc, char *argv[])
 {
-	long num1, num2;
+	long int num1, num2;
 
 	if (argc == 3)
 	{
-		long num1 = atoi(argv[0]);
-		long num2 = atoi(argv[1]);
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[2]);
 	} else
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	printf("%l", num1 * num2);
+	printf("%li\n", num1 * num2);
 }
