@@ -38,7 +38,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (k <= i)
 	{
 		str[k] = s1[k];
-		k++
+		k++;
 	}
 	l = k;
 	while (l <= i + bytes)
