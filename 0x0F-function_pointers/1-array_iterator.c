@@ -1,6 +1,7 @@
 #include "function_pointers.h"
 #include <stdlib.h>
 
+#define int size_t
 /**
  * array_iterator - prints every element of array
  * @array: pointer array
