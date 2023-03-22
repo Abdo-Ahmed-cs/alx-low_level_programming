@@ -1,7 +1,6 @@
 #include "function_pointers.h"
 #include <stdlib.h>
 
-#define int size_t
 /**
  * array_iterator - prints every element of array
  * @array: pointer array
@@ -20,7 +19,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 
 	for (i = 0; i < size; i++)
 	{
-		(*action)(array[i]);
+		action(array[i]);
 	}
 
 }
