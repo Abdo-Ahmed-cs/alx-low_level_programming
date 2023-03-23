@@ -22,6 +22,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (!separator)
 		{
 			printf("%s", str);
+		} else if (str == NULL)
+		{
+			printf("(nil)");
 		} else if (i == n - 1)
 		{
 			printf("%s", str);
