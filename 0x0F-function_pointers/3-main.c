@@ -1,6 +1,4 @@
 #include "3-calc.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
  * main - entry point
@@ -19,7 +17,7 @@ int main(int argc, char *argv[])
 	int num2;
 	int (*f)(int, int);
 
-	if (argc != 3)
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
@@ -34,7 +32,7 @@ int main(int argc, char *argv[])
 		exit(99);	
 	}
 
-	if (num2 == 0)
+	if (argv[2] == '/' || argv[2] == '%' && num2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
