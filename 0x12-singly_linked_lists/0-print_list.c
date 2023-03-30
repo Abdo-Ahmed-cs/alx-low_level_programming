@@ -10,7 +10,7 @@ size_t print_list(const list_t *h)
 {
 	unsigned int i = 0, j = 1;
 
-	while (1)
+	while (j)
 	{
 		if (h->str != NULL)
 		{
@@ -23,7 +23,7 @@ size_t print_list(const list_t *h)
 		}
 		if (h->next == NULL)
 		{
-			break;
+			j = 0;
 		}
 
 		h = h->next;
