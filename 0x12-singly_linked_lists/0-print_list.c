@@ -9,7 +9,10 @@
 size_t print_list(const list_t *h)
 {
 	unsigned int i = 0, j = 1;
-
+	if (h == NULL)
+	{
+		return (i);
+	}
 	while (j)
 	{
 		if (h->str != NULL)
