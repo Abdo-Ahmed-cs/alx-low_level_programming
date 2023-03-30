@@ -8,7 +8,13 @@
 void free_list(list_t *head)
 {
 	list_t *free_me;
+	
+	if (head == NULL)
+	{
+		return;
+	}
 	free_me = head;
+
 	if (head->next != NULL)
 	{
 		head = head->next;
