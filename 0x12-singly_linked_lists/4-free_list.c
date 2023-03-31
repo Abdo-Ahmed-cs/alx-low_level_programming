@@ -18,12 +18,14 @@ void free_list(list_t *head)
 	if (head->next != NULL)
 	{
 		head = head->next;
-	} else
-	{
-		free(head);
-		return;
 	}
-	free(free_me->str);
-	free(free_me->next);
+	if (free_me->str != NULL)
+	{
+		free(free_me->str);
+	}
+	if (free_me->next != NULL)
+	{
+		free(free_me->next);
+	}
 	free(free_me);
 }
