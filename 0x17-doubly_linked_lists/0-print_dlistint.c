@@ -15,16 +15,16 @@ size_t print_dlistint(const dlistint_t *h)
 		return (i);
 	}
 
+        while (h->prev)
+        {
+                h = h->prev;
+        }
+
 	while(h != NULL)
 	{
 		i++;
 		printf("%d\n", h->n);
 		h = h->next;
-	}
-	
-	while (h)
-	{
-		h = h->prev;
 	}
 	return (i);
 }
