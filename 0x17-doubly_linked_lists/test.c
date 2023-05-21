@@ -11,16 +11,19 @@
 int main(void)
 {
     dlistint_t *head;
+    dlistint_t *new;
+    size_t count = 0;
 
     head = NULL;
-    add_dnodeint(&head, 0);
-    add_dnodeint(&head, 1);
-    add_dnodeint(&head, 2);
-    add_dnodeint(&head, 3);
-    add_dnodeint(&head, 4);
-    add_dnodeint(&head, 98);
-    add_dnodeint(&head, 402);
-    add_dnodeint(&head, 1024);
-    print_dlistint(head);
+    new = add_dnodeint(&head, 0);
+    new = add_dnodeint(&head, 1);
+    new = add_dnodeint(&head, 2);
+    new = add_dnodeint(&head, 3);
+    new = add_dnodeint(&head, 4);
+    new = add_dnodeint(&head, 98);
+    new = add_dnodeint(&head, 402);
+    new = add_dnodeint(&head, 1024);
+    count = print_dlistint(head);
+    printf("-> %lu elements\n", count);
     return (EXIT_SUCCESS);
 }
